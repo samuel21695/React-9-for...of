@@ -18,5 +18,9 @@ function vanillaComponent(tagName, attributes, style, events, children) {
     styleString += ` ${key}: ${value};`;
   }
 
-  
+  // #3
+  let eventString = "";
+  for (const [key, value] of Object.entries(events)) {
+    eventString += ` ${key}: "${value}"`;
+  }  
 }
