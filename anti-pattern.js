@@ -23,4 +23,14 @@ function vanillaComponent(tagName, attributes, style, events, children) {
   for (const [key, value] of Object.entries(events)) {
     eventString += ` ${key}: "${value}"`;
   }  
+
+  // #4
+  let childrenString = "";
+  for (const child of children) {
+    if (typeof (child) === "string" || typeof (child) === "number") {
+      childrenString += child;
+    } else {
+      childrenString += child.outerHTML;
+    }
+  }
 }
