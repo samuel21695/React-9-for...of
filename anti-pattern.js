@@ -33,4 +33,11 @@ function vanillaComponent(tagName, attributes, style, events, children) {
       childrenString += child.outerHTML;
     }
   }
+
+  // #5
+  const htmlString = `
+  <${tagName}${attributeString} style="${styleString}"${eventString}>
+    ${childrenString}
+  </${tagName}>
+  `;
 }
