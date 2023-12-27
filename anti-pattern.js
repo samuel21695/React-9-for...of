@@ -4,3 +4,11 @@
   하지만, 매개변수가 너무 많아질 때의 문제와 반복 작동 코드의 문제점을 발견하기 좋습니다.
   매우 절차적이고, 융통성(?)이 없는 코드이므로 jsx로 멋지게 추상화된 코드와 함께 비교하시기 바랍니다.
 */
+
+function vanillaComponent(tagName, attributes, style, events, children) {
+  // #1
+  let attributeString = "";
+  for (const [key, value] of Object.entries(attributes)) {
+    attributeString += ` ${key}="${value}"`;
+  }
+}
