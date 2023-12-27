@@ -21,3 +21,5 @@ function ReactComponent(props) {
   // 이것을 JSX 문법이라고 부르며, babel이 이것을 createElement 함수로 변환해줍니다.
   return <Tag {...OtherProps} />;
 }
+
+export default ReactComponent;
