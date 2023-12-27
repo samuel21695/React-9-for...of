@@ -11,4 +11,12 @@ function vanillaComponent(tagName, attributes, style, events, children) {
   for (const [key, value] of Object.entries(attributes)) {
     attributeString += ` ${key}="${value}"`;
   }
+
+  // #2
+  let styleString = "";
+  for (const [key, value] of Object.entries(style)) {
+    styleString += ` ${key}: ${value};`;
+  }
+
+  
 }
