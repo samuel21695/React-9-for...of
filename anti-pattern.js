@@ -40,4 +40,7 @@ function vanillaComponent(tagName, attributes, style, events, children) {
     ${childrenString}
   </${tagName}>
   `;
+
+  // #6
+  return htmlString;
 }
